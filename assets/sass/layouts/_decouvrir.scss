@@ -1,0 +1,31 @@
+// Nous découvrir
+.nous-decouvrir {
+    display: flex;
+    flex-direction: row-reverse;
+    color: #ffffff;
+    justify-content: start;
+    align-items: center;
+    gap: 62px;
+    .column {
+      h1 {
+        @include h1-style;
+      }
+      h2 {
+        font-size: 43px;
+      }
+      a {
+        @include bouton-style;
+        margin-top: 42px;
+        font-size: 18px;
+        width: 211px;
+      }
+      p {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    img {
+      @include img-style;
+    }
+  }

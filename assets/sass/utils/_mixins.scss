@@ -1,0 +1,33 @@
+// MIXIN
+@mixin bouton-style {
+    border: 1.5px solid #ffffff;
+    border-radius: 34px;
+    opacity: 1;
+    width: 189px;
+    height: 54px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+  
+  @mixin img-style {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    &:hover {
+      filter: none;
+    }
+  }
+  
+  @mixin h1-style {
+    font-size: 43px;
+    line-height: 54px;
+    font-weight: bold;
+  }

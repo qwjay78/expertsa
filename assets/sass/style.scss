@@ -1,0 +1,164 @@
+@import "./base.scss";
+@import "./utils/mixins";
+@import "./layouts/header";
+@import "./layouts/info";
+@import "./layouts/decouvrir";
+@import "./layouts/solutions";
+@import "./layouts/footer";
+
+//   Media queries
+
+@media screen and (max-width: 992px) {
+  // nav
+  header {
+    .row.nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 80px;
+      padding-bottom: 30px;
+      padding-right: 0;
+      height: auto;
+      img {
+        margin-bottom: 30px;
+        margin-top: 0;
+        margin-left: 0;
+      }
+    }
+    .hero.row {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+  .nous-decouvrir {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .solutions__containers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .devis {
+    a {
+      padding: 2rem;
+    }
+  }
+  .footer {
+    gap: 10%;
+    &__column {
+      p {
+        font-size: 16px;
+      }
+    }
+    .search-bar {
+      .search-input {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  header {
+    .menu {
+      &__list {
+        flex-direction: column;
+        margin-top: 50px;
+      }
+    }
+    .hero {
+      margin-top: 0;
+      margin-inline: 40px;
+      img {
+        width: 100%;
+      }
+      .column {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  .nous-decouvrir {
+    img {
+      width: 100%;
+    }
+    .column {
+      margin-inline: 40px;
+      h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .solutions {
+    padding-bottom: 0;
+  }
+  .solutions__text {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .solutions__containers {
+    gap: 70px;
+    &__container {
+      width: 350px;
+      img {
+        width: 95%;
+      }
+    }
+  }
+  .devis {
+    width: 100%;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .footer {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .copyright {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  header {
+    .menu__list__component__link{
+      font-size: 16px;
+      text-align: center;
+    }
+    .hero {
+      .column {
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .nous-decouvrir {
+    .column {
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+  .solutions__containers {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    &__container:hover,&__container:active{
+        img{
+            top: 210px;
+        }
+    }
+  }
+}

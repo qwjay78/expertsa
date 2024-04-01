@@ -1,0 +1,66 @@
+// footer
+.footer {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 82.34px;
+    background-image: url(../images/Groupe\ de\ masques\ 6.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 3rem;
+    &__column {
+      h2 {
+        margin-bottom: 16px;
+      }
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      &__contact {
+        display: flex;
+        align-items: center;
+        gap: 19.34px;
+        padding-top: 30px;
+        font-size: 17px;
+        address {
+          font-style: normal;
+        }
+      }
+    }
+    .search-bar {
+      .search-input {
+        display: flex;
+        align-items: center;
+        width: 535px;
+        height: 56px;
+        background-color: #f8cdc5;
+        border: 2px solid $color-primary;
+        padding: 16px;
+        margin-top: 42px;
+        &::placeholder {
+          font-size: 18px;
+          color: #000000;
+        }
+      }
+      .search-button {
+        @include bouton-style;
+        background-color: #000000;
+        color: #ffffff;
+        border-color: #ffffff;
+        font-size: 18px;
+        margin-top: 52px;
+      }
+    }
+  }
+  
+  // copyright
+  .copyright {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 18.38px;
+    font-size: 17px;
+  }
